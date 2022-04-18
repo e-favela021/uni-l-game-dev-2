@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SubQuery Game</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space Mono
+:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+	<div class="stats stats-js">
+		Delivered: <span class="win-count-js">0</span> Lost: <span class="lose-count-js">0</span>
+	</div>
+	<div class="game">
+		<div class="users" style="opacity: 1;">
+			<div class="user">
+				<img src="./img/users/1.jpeg">
+				<div class="title">User #1</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/2.jpeg">
+				<div class="title">User #2</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/3.jpeg">
+				<div class="title">User #3</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/4.jpeg">
+				<div class="title">User #4</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/5.jpeg">
+				<div class="title">User #5</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/6.jpeg">
+				<div class="title">User #6</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/7.jpeg">
+				<div class="title">User #7</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/8.jpeg">
+				<div class="title">User #8</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/9.jpeg">
+				<div class="title">User #9</div>
+			</div>
+			<div class="user">
+				<img src="./img/users/10.jpeg">
+				<div class="title">User #10</div>
+			</div>
+		</div>
+
+		<div class="data-field">
+			<div class="data-row data-row-js" idx="1">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+
+			<div class="data-row data-row-js" idx="2">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+
+			<div class="data-row data-row-js" idx="3">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="4">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="5">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="6">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="7">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="8">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="9">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+			
+			<div class="data-row data-row-js" idx="10">
+				<div class="data-cell data-cell-js" idx="1">
+				</div>
+				<div class="data-cell data-cell-js" idx="2">
+				</div>
+				<div class="data-cell data-cell-js" idx="3">
+				</div>
+				<div class="data-cell data-cell-js" idx="4">
+				</div>
+				<div class="data-cell data-cell-js" idx="5">
+				</div>
+				<div class="data-cell data-cell-js" idx="6">
+				</div>
+				<div class="data-cell data-cell-js" idx="7">
+				</div>
+				<div class="data-cell data-cell-js" idx="8">
+				</div>
+				<div class="data-cell data-cell-js" idx="9">
+				</div>
+			</div>
+		</div>
+
+		<div class="dapps">
+			<div class="dapp dapp-js" idx="1">
+				<img src="./img/dapp/1.gif">
+				<div class="title">Dapp #1</div>
+			</div>
+			<div class="dapp dapp-js" idx="2">
+				<img src="./img/dapp/2.gif">
+				<div class="title">Dapp #2</div>
+			</div>
+			<div class="dapp dapp-js" idx="3">
+				<img src="./img/dapp/3.gif">
+				<div class="title">Dapp #3</div>
+			</div>
+			<div class="dapp dapp-js" idx="4">
+				<img src="./img/dapp/4.gif">
+				<div class="title">Dapp #4</div>
+			</div>
+			<div class="dapp dapp-js" idx="5">
+				<img src="./img/dapp/5.gif">
+				<div class="title">Dapp #5</div>
+			</div>
+			<div class="dapp dapp-js" idx="6">
+				<img src="./img/dapp/6.gif">
+				<div class="title">Dapp #6</div>
+			</div>
+			<div class="dapp dapp-js" idx="7">
+				<img src="./img/dapp/7.gif">
+				<div class="title">Dapp #7</div>
+			</div>
+			<div class="dapp dapp-js" idx="8">
+				<img src="./img/dapp/8.gif">
+				<div class="title">Dapp #8</div>
+			</div>
+			<div class="dapp dapp-js" idx="9">
+				<img src="./img/dapp/9.gif">
+				<div class="title">Dapp #9</div>
+			</div>
+			<div class="dapp dapp-js" idx="10">
+				<img src="./img/dapp/10.gif">
+				<div class="title">Dapp #10</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
